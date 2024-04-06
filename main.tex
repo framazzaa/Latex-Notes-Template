@@ -1,0 +1,29 @@
+\documentclass[]{report}
+
+\usepackage{lipsum}
+\input{preamble}
+
+% -------------------------------------
+% 		MAIN DOC
+% -------------------------------------
+
+\author{F.Mazza}
+\date{Spring 2024}
+\title{{Notes Template}}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+
+	% Chapters
+	\subfile{Chapters/Ch1.tex}	\newpage
+
+	% Appendices
+	\begin{appendices}
+		\subfile{Appendices/appendix.tex}	\newpage
+	\end{appendices}
+
+	\bibliography{biblio}
+	\bibliographystyle{ieeetr}
+
+\end{document}
